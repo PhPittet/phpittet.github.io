@@ -1,0 +1,713 @@
+
+
+<!DOCTYPE html>
+
+
+<html lang="en" data-content_root="" >
+
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.18.1: http://docutils.sourceforge.net/" />
+
+    <title>9.6. La 3ème loi de Newton &#8212; Physique 1M</title>
+  
+  
+  
+  <script data-cfasync="false">
+    document.documentElement.dataset.mode = localStorage.getItem("mode") || "";
+    document.documentElement.dataset.theme = localStorage.getItem("theme") || "light";
+  </script>
+  
+  <!-- Loaded before other Sphinx assets -->
+  <link href="../_static/styles/theme.css?digest=8d27b9dea8ad943066ae" rel="stylesheet" />
+<link href="../_static/styles/bootstrap.css?digest=8d27b9dea8ad943066ae" rel="stylesheet" />
+<link href="../_static/styles/pydata-sphinx-theme.css?digest=8d27b9dea8ad943066ae" rel="stylesheet" />
+
+  
+  <link href="../_static/vendor/fontawesome/6.5.1/css/all.min.css?digest=8d27b9dea8ad943066ae" rel="stylesheet" />
+  <link rel="preload" as="font" type="font/woff2" crossorigin href="../_static/vendor/fontawesome/6.5.1/webfonts/fa-solid-900.woff2" />
+<link rel="preload" as="font" type="font/woff2" crossorigin href="../_static/vendor/fontawesome/6.5.1/webfonts/fa-brands-400.woff2" />
+<link rel="preload" as="font" type="font/woff2" crossorigin href="../_static/vendor/fontawesome/6.5.1/webfonts/fa-regular-400.woff2" />
+
+    <link rel="stylesheet" type="text/css" href="../_static/pygments.css" />
+    <link rel="stylesheet" href="../_static/styles/sphinx-book-theme.css?digest=14f4ca6b54d191a8c7657f6c759bf11a5fb86285" type="text/css" />
+    <link rel="stylesheet" type="text/css" href="../_static/togglebutton.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/copybutton.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/mystnb.4510f1fc1dee50b3e5859aac5469c37c29e427902b24a333a5f9fcb2f0b3ac41.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/sphinx-thebe.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/exercise.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/myadmonition.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/myexercices.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/myfont.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/.ipynb_checkpoints/myadmonition-checkpoint.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/.ipynb_checkpoints/myexercices-checkpoint.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/.ipynb_checkpoints/myfont-checkpoint.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/design-style.4045f2051d55cab465a707391d5b2007.min.css" />
+  
+  <!-- Pre-loaded scripts that we'll load fully later -->
+  <link rel="preload" as="script" href="../_static/scripts/bootstrap.js?digest=8d27b9dea8ad943066ae" />
+<link rel="preload" as="script" href="../_static/scripts/pydata-sphinx-theme.js?digest=8d27b9dea8ad943066ae" />
+  <script src="../_static/vendor/fontawesome/6.5.1/js/all.min.js?digest=8d27b9dea8ad943066ae"></script>
+
+    <script data-url_root="../" id="documentation_options" src="../_static/documentation_options.js"></script>
+    <script src="../_static/jquery.js"></script>
+    <script src="../_static/underscore.js"></script>
+    <script src="../_static/_sphinx_javascript_frameworks_compat.js"></script>
+    <script src="../_static/doctools.js"></script>
+    <script src="../_static/clipboard.min.js"></script>
+    <script src="../_static/copybutton.js"></script>
+    <script src="../_static/scripts/sphinx-book-theme.js?digest=5a5c038af52cf7bc1a1ec88eea08e6366ee68824"></script>
+    <script>let toggleHintShow = 'Click to show';</script>
+    <script>let toggleHintHide = 'Click to hide';</script>
+    <script>let toggleOpenOnPrint = 'true';</script>
+    <script src="../_static/togglebutton.js"></script>
+    <script>var togglebuttonSelector = '.toggle, .admonition.dropdown';</script>
+    <script src="../_static/design-tabs.js"></script>
+    <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"
+const thebe_selector = ".thebe,.cell"
+const thebe_selector_input = "pre"
+const thebe_selector_output = ".output, .cell_output"
+</script>
+    <script async="async" src="../_static/sphinx-thebe.js"></script>
+    <script>window.MathJax = {"options": {"processHtmlClass": "tex2jax_process|mathjax_process|math|output_area"}}</script>
+    <script defer="defer" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <script>DOCUMENTATION_OPTIONS.pagename = 'Chapitre9/9-3-LoiNewton3';</script>
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" />
+    <link rel="next" title="9.7. Questions conceptuelles" href="9-3-questions.html" />
+    <link rel="prev" title="9.5. Questions conceptuelles" href="9-2-questions.html" />
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <meta name="docsearch:language" content="en"/>
+  </head>
+  
+  
+  <body data-bs-spy="scroll" data-bs-target=".bd-toc-nav" data-offset="180" data-bs-root-margin="0px 0px -60%" data-default-mode="">
+
+  
+  
+  <a id="pst-skip-link" class="skip-link" href="#main-content">Skip to main content</a>
+  
+  <div id="pst-scroll-pixel-helper"></div>
+  
+  <button type="button" class="btn rounded-pill" id="pst-back-to-top">
+    <i class="fa-solid fa-arrow-up"></i>
+    Back to top
+  </button>
+
+  
+  <input type="checkbox"
+          class="sidebar-toggle"
+          name="__primary"
+          id="__primary"/>
+  <label class="overlay overlay-primary" for="__primary"></label>
+  
+  <input type="checkbox"
+          class="sidebar-toggle"
+          name="__secondary"
+          id="__secondary"/>
+  <label class="overlay overlay-secondary" for="__secondary"></label>
+  
+  <div class="search-button__wrapper">
+    <div class="search-button__overlay"></div>
+    <div class="search-button__search-container">
+<form class="bd-search d-flex align-items-center"
+      action="../search.html"
+      method="get">
+  <i class="fa-solid fa-magnifying-glass"></i>
+  <input type="search"
+         class="form-control"
+         name="q"
+         id="search-input"
+         placeholder="Search this book..."
+         aria-label="Search this book..."
+         autocomplete="off"
+         autocorrect="off"
+         autocapitalize="off"
+         spellcheck="false"/>
+  <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd>K</kbd></span>
+</form></div>
+  </div>
+  
+    <header class="bd-header navbar navbar-expand-lg bd-navbar">
+    </header>
+  
+
+  <div class="bd-container">
+    <div class="bd-container__inner bd-page-width">
+      
+      
+      
+      <div class="bd-sidebar-primary bd-sidebar">
+        
+
+  
+  <div class="sidebar-header-items sidebar-primary__section">
+    
+    
+    
+    
+  </div>
+  
+    <div class="sidebar-primary-items__start sidebar-primary__section">
+        <div class="sidebar-primary-item">
+
+  
+
+<a class="navbar-brand logo" href="../index.html">
+  
+  
+  
+  
+  
+    
+    
+      
+    
+    
+    <img src="../_static/LogoPhysique1M.png" class="logo__image only-light" alt="Physique 1M - Home"/>
+    <script>document.write(`<img src="../_static/LogoPhysique1M.png" class="logo__image only-dark" alt="Physique 1M - Home"/>`);</script>
+  
+  
+</a></div>
+        <div class="sidebar-primary-item"><nav class="bd-links" id="bd-docs-nav" aria-label="Main">
+    <div class="bd-toc-item navbar-nav active">
+        
+        <ul class="nav bd-sidenav bd-sidenav__home-link">
+            <li class="toctree-l1">
+                <a class="reference internal" href="../index.html">
+                    Bienvenue
+                </a>
+            </li>
+        </ul>
+        <ul class="nav bd-sidenav">
+<li class="toctree-l1 has-children"><a class="reference internal" href="../Chapitre0/lecon0.html">Rappels Mathématiques</a><input class="toctree-checkbox" id="toctree-checkbox-1" name="toctree-checkbox-1" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-1"><i class="fa-solid fa-chevron-down"></i></label><ul>
+<li class="toctree-l2"><a class="reference internal" href="../Chapitre0/0-0-puissance.html">Les puissances de 10</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../Chapitre0/0-1-equations.html">Manipulation des équations</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../Chapitre0/0-2-vecteurs.html">Vecteurs</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../Chapitre0/0-3-incertitudes.html">Erreurs &amp; incertitudes</a></li>
+</ul>
+</li>
+</ul>
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">Physique 1M</span></p>
+<ul class="nav bd-sidenav">
+<li class="toctree-l1 has-children"><a class="reference internal" href="../Chapitre1/lecon1.html">1. Notation Scientifique</a><input class="toctree-checkbox" id="toctree-checkbox-2" name="toctree-checkbox-2" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-2"><i class="fa-solid fa-chevron-down"></i></label><ul>
+<li class="toctree-l2"><a class="reference internal" href="../Chapitre1/1-1-notation-scientifique.html">1.1. Écriture scientifique</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../Chapitre1/1-2-chiffre-significatif.html">1.2. Chiffres significatifs</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../Chapitre1/1-3-unite-mesure.html">1.3. Unités de mesure</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../Chapitre1/1-4-precision.html">1.4. Exactitude, précision et incertitude d’une mesure</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../Chapitre1/1-questions.html">1.5. Questions conceptuelles</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../Chapitre1/1-exercices.html">1.6. Exercices</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../Chapitre1/1-glossaire.html">1.7. Glossaire</a></li>
+</ul>
+</li>
+</ul>
+<ul class="nav bd-sidenav">
+<li class="toctree-l1 has-children"><a class="reference internal" href="../Chapitre2/lecon2.html">2. Vecteurs et Scalaires</a><input class="toctree-checkbox" id="toctree-checkbox-3" name="toctree-checkbox-3" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-3"><i class="fa-solid fa-chevron-down"></i></label><ul>
+<li class="toctree-l2"><a class="reference internal" href="../Chapitre2/2-1-vecteurs.html">2.1. Vecteurs et scalaires</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../Chapitre2/2-2-coordonees.html">2.2. Systèmes de coordonnées</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../Chapitre2/2-questions.html">2.3. Questions conceptuelles</a></li>
+</ul>
+</li>
+</ul>
+<ul class="nav bd-sidenav">
+<li class="toctree-l1 has-children"><a class="reference internal" href="../Chapitre3/lecon3.html">3. Déplacement et Vitesse</a><input class="toctree-checkbox" id="toctree-checkbox-4" name="toctree-checkbox-4" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-4"><i class="fa-solid fa-chevron-down"></i></label><ul>
+<li class="toctree-l2"><a class="reference internal" href="../Chapitre3/3-1-position.html">3.1. Position et Déplacement</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../Chapitre3/3-2-vitesse.html">3.2. Vitesse</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../Chapitre3/3-questions.html">3.3. Questions conceptuelles</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../Chapitre3/3-exercices.html">3.4. Exercices</a></li>
+</ul>
+</li>
+</ul>
+<ul class="nav bd-sidenav">
+<li class="toctree-l1 has-children"><a class="reference internal" href="../Chapitre4/lecon4.html">4. Accélération</a><input class="toctree-checkbox" id="toctree-checkbox-5" name="toctree-checkbox-5" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-5"><i class="fa-solid fa-chevron-down"></i></label><ul>
+<li class="toctree-l2"><a class="reference internal" href="../Chapitre4/4-1-acceleration.html">4.1. Qu’est-ce que l’accélération?</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../Chapitre4/4-questions.html">4.2. Questions conceptuelles</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../Chapitre4/4-exercices.html">4.3. Exercices</a></li>
+</ul>
+</li>
+</ul>
+<ul class="nav bd-sidenav">
+<li class="toctree-l1 has-children"><a class="reference internal" href="../Chapitre5/lecon5.html">5. Analyses Graphiques</a><input class="toctree-checkbox" id="toctree-checkbox-6" name="toctree-checkbox-6" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-6"><i class="fa-solid fa-chevron-down"></i></label><ul>
+<li class="toctree-l2"><a class="reference internal" href="../Chapitre5/5-1-GraphX.html">5.1. Graphique de la position x(t)</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../Chapitre5/5-2-GraphV.html">5.2. Graphique de la vitesse v(t)</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../Chapitre5/5-questions.html">5.3. Questions conceptuelles</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../Chapitre5/5-exercices.html">5.4. Exercices</a></li>
+</ul>
+</li>
+</ul>
+<ul class="nav bd-sidenav">
+<li class="toctree-l1 has-children"><a class="reference internal" href="../Chapitre6/lecon6.html">6. Mouvement Rectiligne Uniformément Accéléré (M.R.U.A.)</a><input class="toctree-checkbox" id="toctree-checkbox-7" name="toctree-checkbox-7" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-7"><i class="fa-solid fa-chevron-down"></i></label><ul>
+<li class="toctree-l2"><a class="reference internal" href="../Chapitre6/6-1-MRUA.html">6.1. Équations du mouvement pour un M.R.U.A.</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../Chapitre6/6-2-equations.html">6.2. Équations de la cinématique</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../Chapitre6/6-3-demoequations.html">6.3. Démonstration des équations de la cinématique</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../Chapitre6/6-4-resolution.html">6.4. Bases de la résolution de problèmes pour la cinématique à une dimension</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../Chapitre6/6-questions.html">6.5. Questions conceptuelles</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../Chapitre6/6-exercices.html">6.6. Exercices</a></li>
+</ul>
+</li>
+</ul>
+<ul class="nav bd-sidenav">
+<li class="toctree-l1 has-children"><a class="reference internal" href="../Chapitre7/lecon7.html">7. Chute Libre</a><input class="toctree-checkbox" id="toctree-checkbox-8" name="toctree-checkbox-8" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-8"><i class="fa-solid fa-chevron-down"></i></label><ul>
+<li class="toctree-l2"><a class="reference internal" href="../Chapitre7/7-1-chutelibre.html">7.1. Gravité et chute libre</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../Chapitre7/7-questions.html">7.2. Questions conceptuelles</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../Chapitre7/7-exercices.html">7.3. Exercices</a></li>
+</ul>
+</li>
+</ul>
+<ul class="nav bd-sidenav">
+<li class="toctree-l1 has-children"><a class="reference internal" href="../Chapitre8/lecon8.html">8. Mouvement à 2 Dimensions</a><input class="toctree-checkbox" id="toctree-checkbox-9" name="toctree-checkbox-9" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-9"><i class="fa-solid fa-chevron-down"></i></label><ul>
+<li class="toctree-l2"><a class="reference internal" href="../Chapitre8/8-1-mvt2D.html">8.1. Mouvement Rectiligne à 2 Dimensions</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../Chapitre8/8-questions.html">8.2. Questions conceptuelles</a></li>
+</ul>
+</li>
+</ul>
+<ul class="current nav bd-sidenav">
+<li class="toctree-l1 current active has-children"><a class="reference internal" href="lecon9.html">9. Les 3 Lois de Newton</a><input checked="" class="toctree-checkbox" id="toctree-checkbox-10" name="toctree-checkbox-10" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-10"><i class="fa-solid fa-chevron-down"></i></label><ul class="current">
+<li class="toctree-l2"><a class="reference internal" href="9-1-LoiNewton1.html">9.1. La 1<sup>ère</sup> loi de Newton</a></li>
+<li class="toctree-l2"><a class="reference internal" href="9-1-questions.html">9.2. Questions conceptuelles</a></li>
+<li class="toctree-l2"><a class="reference internal" href="9-2-LoiNewton2.html">9.3. La 2<sup>ème</sup> loi de Newton</a></li>
+
+<li class="toctree-l2"><a class="reference internal" href="9-2-questions.html">9.5. Questions conceptuelles</a></li>
+<li class="toctree-l2 current active"><a class="current reference internal" href="#">9.6. La 3<sup>ème</sup> loi de Newton</a></li>
+<li class="toctree-l2"><a class="reference internal" href="9-3-questions.html">9.7. Questions conceptuelles</a></li>
+<li class="toctree-l2"><a class="reference internal" href="9-4-AutreForces.html">9.8. Les autres forces</a></li>
+<li class="toctree-l2"><a class="reference internal" href="9-4-questions.html">9.9. Questions conceptuelles</a></li>
+<li class="toctree-l2"><a class="reference internal" href="9-resume.html">9.10. Résumé</a></li>
+</ul>
+</li>
+</ul>
+<ul class="nav bd-sidenav">
+<li class="toctree-l1 has-children"><a class="reference internal" href="../Chapitre10/lecon10.html">10. Stratégie et Applications des Forces</a><input class="toctree-checkbox" id="toctree-checkbox-11" name="toctree-checkbox-11" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-11"><i class="fa-solid fa-chevron-down"></i></label><ul>
+<li class="toctree-l2"><a class="reference internal" href="../Chapitre10/10-1-StrategieRes.html">10.1. Stratégie de résolution</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../Chapitre10/10-2-Applications.html">10.2. Applications des lois de Newton</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../Chapitre10/10-resume.html">10.3. Résumé</a></li>
+</ul>
+</li>
+</ul>
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">Annexes</span></p>
+<ul class="nav bd-sidenav">
+<li class="toctree-l1 has-children"><a class="reference internal" href="../Annexes/annexe.html">11. Annexes</a><input class="toctree-checkbox" id="toctree-checkbox-12" name="toctree-checkbox-12" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-12"><i class="fa-solid fa-chevron-down"></i></label><ul>
+<li class="toctree-l2"><a class="reference internal" href="../Annexes/MyST_Cheat.html">11.1. MyST Cheat sheet</a></li>
+</ul>
+</li>
+</ul>
+
+    </div>
+</nav></div>
+    </div>
+  
+  
+  <div class="sidebar-primary-items__end sidebar-primary__section">
+  </div>
+  
+  <div id="rtd-footer-container"></div>
+
+
+      </div>
+      
+      <main id="main-content" class="bd-main">
+        
+        
+
+<div class="sbt-scroll-pixel-helper"></div>
+
+          <div class="bd-content">
+            <div class="bd-article-container">
+              
+              <div class="bd-header-article">
+<div class="header-article-items header-article__inner">
+  
+    <div class="header-article-items__start">
+      
+        <div class="header-article-item"><label class="sidebar-toggle primary-toggle btn btn-sm" for="__primary" title="Toggle primary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
+  <span class="fa-solid fa-bars"></span>
+</label></div>
+      
+    </div>
+  
+  
+    <div class="header-article-items__end">
+      
+        <div class="header-article-item">
+
+<div class="article-header-buttons">
+
+
+
+
+
+<div class="dropdown dropdown-source-buttons">
+  <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false" aria-label="Source repositories">
+    <i class="fab fa-github"></i>
+  </button>
+  <ul class="dropdown-menu">
+      
+      
+      
+      <li><a href="https://github.com/executablebooks/jupyter-book" target="_blank"
+   class="btn btn-sm btn-source-repository-button dropdown-item"
+   title="Source repository"
+   data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fab fa-github"></i>
+  </span>
+<span class="btn__text-container">Repository</span>
+</a>
+</li>
+      
+      
+      
+      
+      <li><a href="https://github.com/executablebooks/jupyter-book/issues/new?title=Issue%20on%20page%20%2FChapitre9/9-3-LoiNewton3.html&body=Your%20issue%20content%20here." target="_blank"
+   class="btn btn-sm btn-source-issues-button dropdown-item"
+   title="Open an issue"
+   data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-lightbulb"></i>
+  </span>
+<span class="btn__text-container">Open issue</span>
+</a>
+</li>
+      
+  </ul>
+</div>
+
+
+
+
+
+
+<div class="dropdown dropdown-download-buttons">
+  <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false" aria-label="Download this page">
+    <i class="fas fa-download"></i>
+  </button>
+  <ul class="dropdown-menu">
+      
+      
+      
+      <li><a href="../_sources/Chapitre9/9-3-LoiNewton3.md" target="_blank"
+   class="btn btn-sm btn-download-source-button dropdown-item"
+   title="Download source file"
+   data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-file"></i>
+  </span>
+<span class="btn__text-container">.md</span>
+</a>
+</li>
+      
+      
+      
+      
+      <li>
+<button onclick="window.print()"
+  class="btn btn-sm btn-download-pdf-button dropdown-item"
+  title="Print to PDF"
+  data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-file-pdf"></i>
+  </span>
+<span class="btn__text-container">.pdf</span>
+</button>
+</li>
+      
+  </ul>
+</div>
+
+
+
+
+<button onclick="toggleFullScreen()"
+  class="btn btn-sm btn-fullscreen-button"
+  title="Fullscreen mode"
+  data-bs-placement="bottom" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-expand"></i>
+  </span>
+
+</button>
+
+
+
+<script>
+document.write(`
+  <button class="btn btn-sm navbar-btn theme-switch-button" title="light/dark" aria-label="light/dark" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <span class="theme-switch nav-link" data-mode="light"><i class="fa-solid fa-sun fa-lg"></i></span>
+    <span class="theme-switch nav-link" data-mode="dark"><i class="fa-solid fa-moon fa-lg"></i></span>
+    <span class="theme-switch nav-link" data-mode="auto"><i class="fa-solid fa-circle-half-stroke fa-lg"></i></span>
+  </button>
+`);
+</script>
+
+
+<script>
+document.write(`
+  <button class="btn btn-sm navbar-btn search-button search-button__button" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <i class="fa-solid fa-magnifying-glass fa-lg"></i>
+  </button>
+`);
+</script>
+<label class="sidebar-toggle secondary-toggle btn btn-sm" for="__secondary"title="Toggle secondary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <span class="fa-solid fa-list"></span>
+</label>
+</div></div>
+      
+    </div>
+  
+</div>
+</div>
+              
+              
+
+<div id="jb-print-docs-body" class="onlyprint">
+    <h1>La 3ème loi de Newton</h1>
+    <!-- Table of contents -->
+    <div id="print-main-content">
+        <div id="jb-print-toc">
+            
+            <div>
+                <h2> Contents </h2>
+            </div>
+            <nav aria-label="Page">
+                <ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#la-symetrie-des-forces">La symétrie des forces</a></li>
+</ul>
+            </nav>
+        </div>
+    </div>
+</div>
+
+              
+                
+<div id="searchbox"></div>
+                <article class="bd-article">
+                  
+  <section class="tex2jax_ignore mathjax_ignore" id="la-3eme-loi-de-newton">
+<span id="chap-loinewton3"></span><h1><span class="section-number">9.6. </span>La 3<sup>ème</sup> loi de Newton<a class="headerlink" href="#la-3eme-loi-de-newton" title="Permalink to this heading">#</a></h1>
+<section id="la-symetrie-des-forces">
+<h2>La symétrie des forces<a class="headerlink" href="#la-symetrie-des-forces" title="Permalink to this heading">#</a></h2>
+<p>Il y a un passage dans la comédie musicale l’Homme de la Mancha qui se rapporte à la troisième loi du mouvement de Newton. Sancho, en décrivant une bagarre avec sa femme à Don Quichotte, dit: “Bien sûr, je l’ai frappée en arrière, Votre Grâce, mais elle est beaucoup plus dure que moi et vous savez ce qu’ils disent: “Que la pierre touche le lanceur ou le lanceur frappe la pierre, ça va être mauvais pour le lanceur”.” C’est exactement ce qui se passe chaque fois qu’un corps exerce une force sur un autre - le premier subit également une force (égale en amplitude et en sens inverse). De nombreuses expériences courantes, telles que se cogner un orteil ou lancer une balle, le confirment. C’est précisément indiqué dans la <code class="docutils literal notranslate"><span class="pre">troisième</span> <span class="pre">loi</span> <span class="pre">du</span> <span class="pre">mouvement</span> <span class="pre">de</span> <span class="pre">Newton</span></code>.</p>
+<div class="formule admonition">
+<p class="admonition-title">Troisième loi de Newton</p>
+<p>Chaque fois qu’un corps exerce une force sur un second corps, le premier corps subit une force de grandeur égale et de direction opposée à la force qu’il exerce.</p>
+<div class="math notranslate nohighlight">
+\[\vec{F}_{1\,sur\,2}=-\vec{F}_{2\,sur\,1}\]</div>
+</div>
+<p>Cette loi représente une certaine symétrie dans la nature : les forces se produisent toujours par paires, et un corps ne peut pas exercer une force sur un autre sans éprouver une force elle-même. Nous appelons parfois cette loi vaguement <code class="docutils literal notranslate"><span class="pre">action-réaction</span></code>, où la force exercée est l’action et la force ressentie en conséquence est la réaction. La troisième loi de Newton a des utilisations pratiques pour analyser l’origine des forces et comprendre quelles forces sont extérieures à un système.</p>
+<p>Nous pouvons facilement voir la troisième loi de Newton à l’œuvre en regardant comment les gens se déplacent. Prenons l’exemple d’un nageur poussant du côté d’une piscine, comme illustré à la <a class="reference internal" href="#nageur"><span class="std std-numref">Fig. 9.8</span></a>. Elle pousse contre le mur de la piscine avec ses pieds et accélère dans le sens opposé à celui de sa poussée. Le mur a exercé une force égale et opposée sur le nageur. Vous pourriez penser que deux forces égales et opposées s’annuleraient, mais ce n’est pas le cas parce qu’elles agissent sur des systèmes différents . Dans ce cas, il y a deux systèmes que nous pourrions étudier : le nageur ou le mur. Si nous choisissons le nageur comme système d’intérêt, comme sur la figure, alors <span class="math notranslate nohighlight">\(\vec{F}_{mur\,sur\,pieds}\)</span> est une force externe sur ce système et affecte son mouvement. Le nageur se déplace dans la direction de <span class="math notranslate nohighlight">\(\vec{F}_{mur\,sur\,pieds}\)</span>. En revanche, la force <span class="math notranslate nohighlight">\(\vec{F}_{pieds\,sur\,mur}\)</span> agit sur le mur et non sur notre système d’intérêt. Donc <span class="math notranslate nohighlight">\(\vec{F}_{pieds\,sur\,mur}\)</span> n’affecte pas directement le mouvement du système et n’annule pas <span class="math notranslate nohighlight">\(\vec{F}_{mur\,sur\,pieds}\)</span>. Notez que la nageuse pousse dans la direction opposée à celle dans laquelle elle souhaite se déplacer. La réaction à sa poussée est donc dans la direction souhaitée.</p>
+<figure class="align-center" id="nageur">
+<a class="reference internal image-reference" href="../_images/nageur.png"><img alt="../_images/nageur.png" src="../_images/nageur.png" style="width: 55%;" /></a>
+<figcaption>
+<p><span class="caption-number">Fig. 9.8 </span><span class="caption-text"><em>Lorsque le nageur exerce une force <span class="math notranslate nohighlight">\(\vec{F}_{pieds\,sur\,mur}\)</span> sur le mur, elle accélère dans le sens opposé à celui de sa poussée. Cela signifie que la force externe résultante exercée sur elle est dans la direction opposée à <span class="math notranslate nohighlight">\(\vec{F}_{pieds\,sur\,mur}\)</span>. Cette opposition se produit parce que, conformément à la troisième loi du mouvement de Newton, le mur exerce une force <span class="math notranslate nohighlight">\(\vec{F}_{mur\,sur\,pieds}\)</span> sur elle, de grandeur égale mais dans le sens opposé à celui qu’elle exerce sur elle. La ligne autour du nageur indique le système d’intérêt. Notez que <span class="math notranslate nohighlight">\(\vec{F}_{pieds\,sur\,mur}\)</span> n’agit pas sur ce système (le nageur) et, par conséquent, n’annule pas <span class="math notranslate nohighlight">\(\vec{F}_{mur\,sur\,pieds}\)</span>. Ainsi, le diagramme du corps libre montre seulement <span class="math notranslate nohighlight">\(\vec{F}_{mur\,sur\,pieds}\)</span>, la force gravitationnelle, et <span class="math notranslate nohighlight">\(\vec{F}_{f}\)</span>, la force de flottabilité de l’eau supportant le poids du nageur. Les forces verticales <span class="math notranslate nohighlight">\(\vec{P}\)</span> et <span class="math notranslate nohighlight">\(\vec{F}_{f}\)</span> s’annulent car il n’y a pas de mouvement vertical. (crédit : <a class="reference external" href="http://openstax.org">openstax.org</a>)</em></span><a class="headerlink" href="#nageur" title="Permalink to this image">#</a></p>
+</figcaption>
+</figure>
+<p>D’autres exemples de la troisième loi de Newton sont faciles à trouver. Alors qu’un professeur fait les cent pas devant un tableau blanc, elle exerce une force vers l’arrière sur le sol. Le sol exerce une force de réaction vers l’avant sur le professeur qui la fait accélérer vers l’avant. De même, une voiture accélère parce que le sol pousse vers l’avant sur les roues motrices en réaction aux roues motrices qui poussent vers l’arrière sur le sol. Vous pouvez voir des preuves que les roues poussent vers l’arrière lorsque les pneus patinent sur une route de gravier et projettent des pierres en arrière. Dans un autre exemple, les fusées avancent en expulsant du gaz vers l’arrière à grande vitesse. Cela signifie que la fusée exerce une grande force vers l’arrière sur le gaz dans la chambre de combustion de la fusée, et que le gaz exerce donc une grande force de réaction vers l’avant sur la fusée. Cette force de réaction est appelée poussée. C’est une idée fausse courante que les fusées se propulsent en poussant sur le sol ou dans les airs derrière elles. Ils fonctionnent mieux dans le vide, où ils peuvent plus facilement expulser les gaz d’échappement. Les hélicoptères créent de la même manière une portance en poussant l’air vers le bas, subissant ainsi une force de réaction ascendante. Les oiseaux et les avions volent également en exerçant une force sur l’air dans une direction opposée à celle de la force dont ils ont besoin. Par exemple, les ailes d’un oiseau poussent l’air vers le bas et vers l’arrière afin de se soulever et d’avancer. Une pieuvre se propulse dans l’eau en éjectant de l’eau à travers un entonnoir de son corps, semblable à un jet ski. Dans une situation similaire à celle de Sancho, les combattants professionnels en cage subissent des forces de réaction lorsqu’ils frappent, se cassant parfois la main en frappant le corps d’un adversaire.</p>
+<div class="exores admonition">
+<p class="admonition-title">Exemple : Choisir le bon système</p>
+<p>Une professeure de physique pousse un chariot d’équipement de démonstration dans une salle de conférence, comme le montre la figure ci-dessous. Sa masse est de <span class="math notranslate nohighlight">\(65.0\,kg\)</span>, celle du chariot de <span class="math notranslate nohighlight">\(12.0\,kg\)</span> et celle de son équipement de <span class="math notranslate nohighlight">\(7.0\,kg\)</span>. Calculez l’accélération produite lorsque la professeure exerce une force vers l’arrière de <span class="math notranslate nohighlight">\(150\,N\)</span> sur le sol. Toutes les forces opposées au mouvement, telles que la friction sur les roues du chariot et la résistance à l’air, totalisent <span class="math notranslate nohighlight">\(24.0\,N\)</span>.</p>
+<figure class="align-center" id="chariot">
+<a class="reference internal image-reference" href="../_images/Chariot.jpg"><img alt="../_images/Chariot.jpg" src="../_images/Chariot.jpg" style="width: 60%;" /></a>
+<figcaption>
+<p><span class="caption-number">Fig. 9.9 </span><span class="caption-text"><em>Une professeure pousse un chariot d’équipement de démonstration. Les longueurs des flèches sont proportionnelles à l’amplitude des forces (sauf pour <span class="math notranslate nohighlight">\(\vec{f}\)</span>, car elle est trop petite pour être dessinée à l’échelle). Différentes questions sont posées dans chaque exemple; ainsi, le système doit être défini différemment pour chacun. Le système 1 est approprié pour cet exemple, car il demande l’accélération de l’ensemble du groupe d’objets. Seulement <span class="math notranslate nohighlight">\(\vec{F}_{sol}\)</span> et <span class="math notranslate nohighlight">\(\vec{f}\)</span> sont des forces externes agissant sur le système 1 le long de la ligne de mouvement. Toutes les autres forces annulent ou agissent sur le monde extérieur. Le système 2 est choisi pour l’ exemple afin que <span class="math notranslate nohighlight">\(\vec{F}_{prof}\)</span> sera une force extérieure et entrera dans la deuxième loi de Newton. Notez que les diagrammes des forces, qui nous permettent d’appliquer la deuxième loi de Newton, varient selon le système choisi. (crédit : <a class="reference external" href="http://openstax.org">openstax.org</a>)</em></span><a class="headerlink" href="#chariot" title="Permalink to this image">#</a></p>
+</figcaption>
+</figure>
+<div class="dropdown strategie admonition">
+<p class="admonition-title"><em>stratégie</em></p>
+<p>Puisqu’ils accélèrent en tant qu’unité, nous définissons le système comme étant la professeure, le chariot et l’équipement.</p>
+<p>Il s’agit du système 1 de la figure ci-dessus. La professeure recule avec force <span class="math notranslate nohighlight">\(\vec{F}_{pieds}\)</span> de <span class="math notranslate nohighlight">\(150\,N\)</span>. Selon la troisième loi de Newton, le sol exerce une force de réaction vers l’avant <span class="math notranslate nohighlight">\(\vec{F}_{sol}\)</span> de <span class="math notranslate nohighlight">\(150\,N\)</span> sur le système 1. Puisque tout mouvement est horizontal, nous pouvons supposer qu’il n’y a pas de force résultante dans la direction verticale.</p>
+<p>Le problème est donc unidimensionnel le long de la direction horizontale. Comme indiqué, <span class="math notranslate nohighlight">\(\vec{f}\)</span> s’oppose au mouvement et est donc dans la direction opposée de <span class="math notranslate nohighlight">\(\vec{F}_{sol}\)</span>. Notez que nous n’incluons pas les forces <span class="math notranslate nohighlight">\(\vec{F}_{prof}\)</span> ou <span class="math notranslate nohighlight">\(\vec{F}_{chariot}\)</span> car ce sont des forces internes, et nous n’incluons pas <span class="math notranslate nohighlight">\(\vec{F}_{pieds}\)</span> car il agit sur le sol, pas sur le système. Il n’y a pas d’autres forces significatives agissant sur le système 1. Si la force externe résultante peut être trouvée à partir de toutes ces informations, nous pouvons utiliser la deuxième loi de Newton pour trouver l’accélération comme demandé <em>(Voir le diagramme des forces sur la figure)</em>.</p>
+</div>
+<div class="dropdown solution admonition">
+<p class="admonition-title"><em>solution</em></p>
+<p>La deuxième loi de Newton est donnée par</p>
+<div class="math notranslate nohighlight">
+\[a=\dfrac{F_{res}}{m}\]</div>
+<p>La force externe résultante sur le système 1 est déduite de la figure ci-dessus et de la discussion ci-dessus comme étant</p>
+<div class="math notranslate nohighlight">
+\[F_{res}=\Sigma F=F_{sol}-f=150\,N-24,0\,N=126\,N\]</div>
+<p>La masse du système 1 est</p>
+<div class="math notranslate nohighlight">
+\[m=(65,0+12,0+7,0)\,kg=84\,kg\]</div>
+<p>Ces valeurs produisent une accélération de</p>
+<div class="math notranslate nohighlight">
+\[a=\dfrac{F_{res}}{m}=\dfrac{126\,N}{84\,kg}=1,5\,m/s^{2}\]</div>
+</div>
+<div class="dropdown discussion admonition">
+<p class="admonition-title"><em>discussion</em></p>
+<p>Aucune des forces entre les composants du système 1, comme entre les mains de la professeure et le chariot, ne contribue à la force externe résultante car elles sont internes au système 1.<br />
+Une autre façon de voir cela est de noter que les forces entre les composants d’un système annulez parce qu’ils sont égaux en grandeur et de sens opposé. Par exemple, la force exercée par la professeure sur le chariot se traduit par une force égale et opposée sur elle. Dans ce cas, les deux forces agissent sur le même système et, par conséquent, s’annulent. Ainsi, les forces internes (entre les composants d’un système) s’annulent. Le choix du système 1 était crucial pour résoudre ce problème.</p>
+</div>
+</div>
+<div class="exores admonition">
+<p class="admonition-title">Exemple : Force sur le chariot - Choix d’un nouveau système</p>
+<p>Calculez la force exercée par la professeure sur le chariot de la figure de l’exemple précédent en utilisant les mêmes données si nécessaire.</p>
+<div class="dropdown strategie admonition">
+<p class="admonition-title"><em>stratégie</em></p>
+<p>Si nous définissons maintenant le système d’intérêt comme étant le chariot plus équipement (système 2 sur la figure ci-dessus), alors la force externe résultante sur le système 2 est la force exercée par la professeure sur le chariot moins la friction.</p>
+<p>La force qu’elle exerce sur le chariot,<span class="math notranslate nohighlight">\(\vec{F}_{prof}\)</span>, est une force externe agissant sur le système 2. <span class="math notranslate nohighlight">\(\vec{F}_{prof}\)</span> était interne au système 1, mais il est externe au système 2 et entrera dans la deuxième loi de Newton pour le système 2.</p>
+</div>
+<div class="dropdown solution admonition">
+<p class="admonition-title"><em>solution</em></p>
+<p>La deuxième loi de Newton peut être utilisée pour trouver <span class="math notranslate nohighlight">\(\vec{F}_{prof}\)</span>. Commençant par</p>
+<div class="math notranslate nohighlight">
+\[a=\dfrac{F_{res}}{m}\]</div>
+<p>et notant que l’amplitude de la force externe résultante sur le système 2 est</p>
+<div class="math notranslate nohighlight">
+\[F_{res}=\Sigma F=F_{prof}-f\]</div>
+<p>nous résolvons pour <span class="math notranslate nohighlight">\(\vec{F}_{prof}\)</span>, la quantité souhaitée:</p>
+<div class="math notranslate nohighlight">
+\[F_{prof}=F_{res}+f\]</div>
+<p>La valeur de <span class="math notranslate nohighlight">\(\vec{f}\)</span> est donnée, il faut donc calculer le force résultante <span class="math notranslate nohighlight">\(\vec{F}_{res}\)</span>. Cela peut être fait puisque l’accélération et la masse du système 2 sont connues. En utilisant la deuxième loi de Newton, nous voyons que</p>
+<div class="math notranslate nohighlight">
+\[F_{res}=m\cdot a\]</div>
+<p>où la masse du système 2 est de <span class="math notranslate nohighlight">\(19,0\,kg\)</span> (<span class="math notranslate nohighlight">\(m=12,0\,kg+7,0\,kg\)</span>) et son accélération s’est avérée être <span class="math notranslate nohighlight">\(a=1,5\,m/s^{2}\)</span> dans l’exemple précédent. Donc,</p>
+<div class="math notranslate nohighlight">
+\[F_{res}=m\cdot a=19\,kg\cdot 1,5\,m/s^{2}=29\,N\]</div>
+<p>Maintenant, nous pouvons trouver la force souhaitée:</p>
+<div class="math notranslate nohighlight">
+\[F_{prof}=F_{res}+f=29\,N+24\,N=53\,N\]</div>
+</div>
+<div class="dropdown discussion admonition">
+<p class="admonition-title"><em>discussion</em></p>
+<p>Il est intéressant de noter que cette force est nettement inférieure à la force de <span class="math notranslate nohighlight">\(150\,N\)</span> que la professeure a exercée en arrière sur le sol. Toute cette force de <span class="math notranslate nohighlight">\(150\,N\)</span> n’est pas transmise au chariot; une partie accélère également masse de la professeure.</p>
+<p>Le choix d’un système est une étape analytique importante à la fois dans la résolution de problèmes et dans la compréhension approfondie de la physique de la situation (ce qui n’est pas forcément la même chose).</p>
+</div>
+</div>
+</section>
+</section>
+
+    <script type="text/x-thebe-config">
+    {
+        requestKernel: true,
+        binderOptions: {
+            repo: "binder-examples/jupyter-stacks-datascience",
+            ref: "master",
+        },
+        codeMirrorConfig: {
+            theme: "abcdef",
+            mode: "python"
+        },
+        kernelOptions: {
+            name: "python3",
+            path: "./Chapitre9"
+        },
+        predefinedOutput: true
+    }
+    </script>
+    <script>kernelName = 'python3'</script>
+
+                </article>
+              
+
+              
+              
+              
+              
+                <footer class="prev-next-footer">
+                  
+<div class="prev-next-area">
+    <a class="left-prev"
+       href="9-2-questions.html"
+       title="previous page">
+      <i class="fa-solid fa-angle-left"></i>
+      <div class="prev-next-info">
+        <p class="prev-next-subtitle">previous</p>
+        <p class="prev-next-title"><span class="section-number">9.5. </span>Questions conceptuelles</p>
+      </div>
+    </a>
+    <a class="right-next"
+       href="9-3-questions.html"
+       title="next page">
+      <div class="prev-next-info">
+        <p class="prev-next-subtitle">next</p>
+        <p class="prev-next-title"><span class="section-number">9.7. </span>Questions conceptuelles</p>
+      </div>
+      <i class="fa-solid fa-angle-right"></i>
+    </a>
+</div>
+                </footer>
+              
+            </div>
+            
+            
+              
+                <div class="bd-sidebar-secondary bd-toc"><div class="sidebar-secondary-items sidebar-secondary__inner">
+
+
+  <div class="sidebar-secondary-item">
+  <div class="page-toc tocsection onthispage">
+    <i class="fa-solid fa-list"></i> Contents
+  </div>
+  <nav class="bd-toc-nav page-toc">
+    <ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#la-symetrie-des-forces">La symétrie des forces</a></li>
+</ul>
+  </nav></div>
+
+</div></div>
+              
+            
+          </div>
+          <footer class="bd-footer-content">
+            
+<div class="bd-footer-content__inner container">
+  
+  <div class="footer-item">
+    
+<p class="component-author">
+By Philippe Pittet
+</p>
+
+  </div>
+  
+  <div class="footer-item">
+    
+
+  <p class="copyright">
+    
+      © Copyright 2022.
+      <br/>
+    
+  </p>
+
+  </div>
+  
+  <div class="footer-item">
+    
+  </div>
+  
+  <div class="footer-item">
+    
+  </div>
+  
+</div>
+          </footer>
+        
+
+      </main>
+    </div>
+  </div>
+  
+  <!-- Scripts loaded after <body> so the DOM is not blocked -->
+  <script src="../_static/scripts/bootstrap.js?digest=8d27b9dea8ad943066ae"></script>
+<script src="../_static/scripts/pydata-sphinx-theme.js?digest=8d27b9dea8ad943066ae"></script>
+
+  <footer class="bd-footer">
+  </footer>
+  </body>
+</html>

@@ -1,0 +1,683 @@
+
+
+<!DOCTYPE html>
+
+
+<html lang="en" data-content_root="" >
+
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.18.1: http://docutils.sourceforge.net/" />
+
+    <title>9.1. La 1ère loi de Newton &#8212; Physique 1M</title>
+  
+  
+  
+  <script data-cfasync="false">
+    document.documentElement.dataset.mode = localStorage.getItem("mode") || "";
+    document.documentElement.dataset.theme = localStorage.getItem("theme") || "light";
+  </script>
+  
+  <!-- Loaded before other Sphinx assets -->
+  <link href="../_static/styles/theme.css?digest=8d27b9dea8ad943066ae" rel="stylesheet" />
+<link href="../_static/styles/bootstrap.css?digest=8d27b9dea8ad943066ae" rel="stylesheet" />
+<link href="../_static/styles/pydata-sphinx-theme.css?digest=8d27b9dea8ad943066ae" rel="stylesheet" />
+
+  
+  <link href="../_static/vendor/fontawesome/6.5.1/css/all.min.css?digest=8d27b9dea8ad943066ae" rel="stylesheet" />
+  <link rel="preload" as="font" type="font/woff2" crossorigin href="../_static/vendor/fontawesome/6.5.1/webfonts/fa-solid-900.woff2" />
+<link rel="preload" as="font" type="font/woff2" crossorigin href="../_static/vendor/fontawesome/6.5.1/webfonts/fa-brands-400.woff2" />
+<link rel="preload" as="font" type="font/woff2" crossorigin href="../_static/vendor/fontawesome/6.5.1/webfonts/fa-regular-400.woff2" />
+
+    <link rel="stylesheet" type="text/css" href="../_static/pygments.css" />
+    <link rel="stylesheet" href="../_static/styles/sphinx-book-theme.css?digest=14f4ca6b54d191a8c7657f6c759bf11a5fb86285" type="text/css" />
+    <link rel="stylesheet" type="text/css" href="../_static/togglebutton.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/copybutton.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/mystnb.4510f1fc1dee50b3e5859aac5469c37c29e427902b24a333a5f9fcb2f0b3ac41.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/sphinx-thebe.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/exercise.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/myadmonition.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/myexercices.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/myfont.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/.ipynb_checkpoints/myadmonition-checkpoint.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/.ipynb_checkpoints/myexercices-checkpoint.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/.ipynb_checkpoints/myfont-checkpoint.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/design-style.4045f2051d55cab465a707391d5b2007.min.css" />
+  
+  <!-- Pre-loaded scripts that we'll load fully later -->
+  <link rel="preload" as="script" href="../_static/scripts/bootstrap.js?digest=8d27b9dea8ad943066ae" />
+<link rel="preload" as="script" href="../_static/scripts/pydata-sphinx-theme.js?digest=8d27b9dea8ad943066ae" />
+  <script src="../_static/vendor/fontawesome/6.5.1/js/all.min.js?digest=8d27b9dea8ad943066ae"></script>
+
+    <script data-url_root="../" id="documentation_options" src="../_static/documentation_options.js"></script>
+    <script src="../_static/jquery.js"></script>
+    <script src="../_static/underscore.js"></script>
+    <script src="../_static/_sphinx_javascript_frameworks_compat.js"></script>
+    <script src="../_static/doctools.js"></script>
+    <script src="../_static/clipboard.min.js"></script>
+    <script src="../_static/copybutton.js"></script>
+    <script src="../_static/scripts/sphinx-book-theme.js?digest=5a5c038af52cf7bc1a1ec88eea08e6366ee68824"></script>
+    <script>let toggleHintShow = 'Click to show';</script>
+    <script>let toggleHintHide = 'Click to hide';</script>
+    <script>let toggleOpenOnPrint = 'true';</script>
+    <script src="../_static/togglebutton.js"></script>
+    <script>var togglebuttonSelector = '.toggle, .admonition.dropdown';</script>
+    <script src="../_static/design-tabs.js"></script>
+    <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"
+const thebe_selector = ".thebe,.cell"
+const thebe_selector_input = "pre"
+const thebe_selector_output = ".output, .cell_output"
+</script>
+    <script async="async" src="../_static/sphinx-thebe.js"></script>
+    <script>window.MathJax = {"options": {"processHtmlClass": "tex2jax_process|mathjax_process|math|output_area"}}</script>
+    <script defer="defer" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <script>DOCUMENTATION_OPTIONS.pagename = 'Chapitre9/9-1-LoiNewton1';</script>
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" />
+    <link rel="next" title="9.2. Questions conceptuelles" href="9-1-questions.html" />
+    <link rel="prev" title="9. Les 3 Lois de Newton" href="lecon9.html" />
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <meta name="docsearch:language" content="en"/>
+  </head>
+  
+  
+  <body data-bs-spy="scroll" data-bs-target=".bd-toc-nav" data-offset="180" data-bs-root-margin="0px 0px -60%" data-default-mode="">
+
+  
+  
+  <a id="pst-skip-link" class="skip-link" href="#main-content">Skip to main content</a>
+  
+  <div id="pst-scroll-pixel-helper"></div>
+  
+  <button type="button" class="btn rounded-pill" id="pst-back-to-top">
+    <i class="fa-solid fa-arrow-up"></i>
+    Back to top
+  </button>
+
+  
+  <input type="checkbox"
+          class="sidebar-toggle"
+          name="__primary"
+          id="__primary"/>
+  <label class="overlay overlay-primary" for="__primary"></label>
+  
+  <input type="checkbox"
+          class="sidebar-toggle"
+          name="__secondary"
+          id="__secondary"/>
+  <label class="overlay overlay-secondary" for="__secondary"></label>
+  
+  <div class="search-button__wrapper">
+    <div class="search-button__overlay"></div>
+    <div class="search-button__search-container">
+<form class="bd-search d-flex align-items-center"
+      action="../search.html"
+      method="get">
+  <i class="fa-solid fa-magnifying-glass"></i>
+  <input type="search"
+         class="form-control"
+         name="q"
+         id="search-input"
+         placeholder="Search this book..."
+         aria-label="Search this book..."
+         autocomplete="off"
+         autocorrect="off"
+         autocapitalize="off"
+         spellcheck="false"/>
+  <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd>K</kbd></span>
+</form></div>
+  </div>
+  
+    <header class="bd-header navbar navbar-expand-lg bd-navbar">
+    </header>
+  
+
+  <div class="bd-container">
+    <div class="bd-container__inner bd-page-width">
+      
+      
+      
+      <div class="bd-sidebar-primary bd-sidebar">
+        
+
+  
+  <div class="sidebar-header-items sidebar-primary__section">
+    
+    
+    
+    
+  </div>
+  
+    <div class="sidebar-primary-items__start sidebar-primary__section">
+        <div class="sidebar-primary-item">
+
+  
+
+<a class="navbar-brand logo" href="../index.html">
+  
+  
+  
+  
+  
+    
+    
+      
+    
+    
+    <img src="../_static/LogoPhysique1M.png" class="logo__image only-light" alt="Physique 1M - Home"/>
+    <script>document.write(`<img src="../_static/LogoPhysique1M.png" class="logo__image only-dark" alt="Physique 1M - Home"/>`);</script>
+  
+  
+</a></div>
+        <div class="sidebar-primary-item"><nav class="bd-links" id="bd-docs-nav" aria-label="Main">
+    <div class="bd-toc-item navbar-nav active">
+        
+        <ul class="nav bd-sidenav bd-sidenav__home-link">
+            <li class="toctree-l1">
+                <a class="reference internal" href="../index.html">
+                    Bienvenue
+                </a>
+            </li>
+        </ul>
+        <ul class="nav bd-sidenav">
+<li class="toctree-l1 has-children"><a class="reference internal" href="../Chapitre0/lecon0.html">Rappels Mathématiques</a><input class="toctree-checkbox" id="toctree-checkbox-1" name="toctree-checkbox-1" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-1"><i class="fa-solid fa-chevron-down"></i></label><ul>
+<li class="toctree-l2"><a class="reference internal" href="../Chapitre0/0-0-puissance.html">Les puissances de 10</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../Chapitre0/0-1-equations.html">Manipulation des équations</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../Chapitre0/0-2-vecteurs.html">Vecteurs</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../Chapitre0/0-3-incertitudes.html">Erreurs &amp; incertitudes</a></li>
+</ul>
+</li>
+</ul>
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">Physique 1M</span></p>
+<ul class="nav bd-sidenav">
+<li class="toctree-l1 has-children"><a class="reference internal" href="../Chapitre1/lecon1.html">1. Notation Scientifique</a><input class="toctree-checkbox" id="toctree-checkbox-2" name="toctree-checkbox-2" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-2"><i class="fa-solid fa-chevron-down"></i></label><ul>
+<li class="toctree-l2"><a class="reference internal" href="../Chapitre1/1-1-notation-scientifique.html">1.1. Écriture scientifique</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../Chapitre1/1-2-chiffre-significatif.html">1.2. Chiffres significatifs</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../Chapitre1/1-3-unite-mesure.html">1.3. Unités de mesure</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../Chapitre1/1-4-precision.html">1.4. Exactitude, précision et incertitude d’une mesure</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../Chapitre1/1-questions.html">1.5. Questions conceptuelles</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../Chapitre1/1-exercices.html">1.6. Exercices</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../Chapitre1/1-glossaire.html">1.7. Glossaire</a></li>
+</ul>
+</li>
+</ul>
+<ul class="nav bd-sidenav">
+<li class="toctree-l1 has-children"><a class="reference internal" href="../Chapitre2/lecon2.html">2. Vecteurs et Scalaires</a><input class="toctree-checkbox" id="toctree-checkbox-3" name="toctree-checkbox-3" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-3"><i class="fa-solid fa-chevron-down"></i></label><ul>
+<li class="toctree-l2"><a class="reference internal" href="../Chapitre2/2-1-vecteurs.html">2.1. Vecteurs et scalaires</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../Chapitre2/2-2-coordonees.html">2.2. Systèmes de coordonnées</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../Chapitre2/2-questions.html">2.3. Questions conceptuelles</a></li>
+</ul>
+</li>
+</ul>
+<ul class="nav bd-sidenav">
+<li class="toctree-l1 has-children"><a class="reference internal" href="../Chapitre3/lecon3.html">3. Déplacement et Vitesse</a><input class="toctree-checkbox" id="toctree-checkbox-4" name="toctree-checkbox-4" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-4"><i class="fa-solid fa-chevron-down"></i></label><ul>
+<li class="toctree-l2"><a class="reference internal" href="../Chapitre3/3-1-position.html">3.1. Position et Déplacement</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../Chapitre3/3-2-vitesse.html">3.2. Vitesse</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../Chapitre3/3-questions.html">3.3. Questions conceptuelles</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../Chapitre3/3-exercices.html">3.4. Exercices</a></li>
+</ul>
+</li>
+</ul>
+<ul class="nav bd-sidenav">
+<li class="toctree-l1 has-children"><a class="reference internal" href="../Chapitre4/lecon4.html">4. Accélération</a><input class="toctree-checkbox" id="toctree-checkbox-5" name="toctree-checkbox-5" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-5"><i class="fa-solid fa-chevron-down"></i></label><ul>
+<li class="toctree-l2"><a class="reference internal" href="../Chapitre4/4-1-acceleration.html">4.1. Qu’est-ce que l’accélération?</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../Chapitre4/4-questions.html">4.2. Questions conceptuelles</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../Chapitre4/4-exercices.html">4.3. Exercices</a></li>
+</ul>
+</li>
+</ul>
+<ul class="nav bd-sidenav">
+<li class="toctree-l1 has-children"><a class="reference internal" href="../Chapitre5/lecon5.html">5. Analyses Graphiques</a><input class="toctree-checkbox" id="toctree-checkbox-6" name="toctree-checkbox-6" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-6"><i class="fa-solid fa-chevron-down"></i></label><ul>
+<li class="toctree-l2"><a class="reference internal" href="../Chapitre5/5-1-GraphX.html">5.1. Graphique de la position x(t)</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../Chapitre5/5-2-GraphV.html">5.2. Graphique de la vitesse v(t)</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../Chapitre5/5-questions.html">5.3. Questions conceptuelles</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../Chapitre5/5-exercices.html">5.4. Exercices</a></li>
+</ul>
+</li>
+</ul>
+<ul class="nav bd-sidenav">
+<li class="toctree-l1 has-children"><a class="reference internal" href="../Chapitre6/lecon6.html">6. Mouvement Rectiligne Uniformément Accéléré (M.R.U.A.)</a><input class="toctree-checkbox" id="toctree-checkbox-7" name="toctree-checkbox-7" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-7"><i class="fa-solid fa-chevron-down"></i></label><ul>
+<li class="toctree-l2"><a class="reference internal" href="../Chapitre6/6-1-MRUA.html">6.1. Équations du mouvement pour un M.R.U.A.</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../Chapitre6/6-2-equations.html">6.2. Équations de la cinématique</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../Chapitre6/6-3-demoequations.html">6.3. Démonstration des équations de la cinématique</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../Chapitre6/6-4-resolution.html">6.4. Bases de la résolution de problèmes pour la cinématique à une dimension</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../Chapitre6/6-questions.html">6.5. Questions conceptuelles</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../Chapitre6/6-exercices.html">6.6. Exercices</a></li>
+</ul>
+</li>
+</ul>
+<ul class="nav bd-sidenav">
+<li class="toctree-l1 has-children"><a class="reference internal" href="../Chapitre7/lecon7.html">7. Chute Libre</a><input class="toctree-checkbox" id="toctree-checkbox-8" name="toctree-checkbox-8" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-8"><i class="fa-solid fa-chevron-down"></i></label><ul>
+<li class="toctree-l2"><a class="reference internal" href="../Chapitre7/7-1-chutelibre.html">7.1. Gravité et chute libre</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../Chapitre7/7-questions.html">7.2. Questions conceptuelles</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../Chapitre7/7-exercices.html">7.3. Exercices</a></li>
+</ul>
+</li>
+</ul>
+<ul class="nav bd-sidenav">
+<li class="toctree-l1 has-children"><a class="reference internal" href="../Chapitre8/lecon8.html">8. Mouvement à 2 Dimensions</a><input class="toctree-checkbox" id="toctree-checkbox-9" name="toctree-checkbox-9" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-9"><i class="fa-solid fa-chevron-down"></i></label><ul>
+<li class="toctree-l2"><a class="reference internal" href="../Chapitre8/8-1-mvt2D.html">8.1. Mouvement Rectiligne à 2 Dimensions</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../Chapitre8/8-questions.html">8.2. Questions conceptuelles</a></li>
+</ul>
+</li>
+</ul>
+<ul class="current nav bd-sidenav">
+<li class="toctree-l1 current active has-children"><a class="reference internal" href="lecon9.html">9. Les 3 Lois de Newton</a><input checked="" class="toctree-checkbox" id="toctree-checkbox-10" name="toctree-checkbox-10" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-10"><i class="fa-solid fa-chevron-down"></i></label><ul class="current">
+<li class="toctree-l2 current active"><a class="current reference internal" href="#">9.1. La 1<sup>ère</sup> loi de Newton</a></li>
+<li class="toctree-l2"><a class="reference internal" href="9-1-questions.html">9.2. Questions conceptuelles</a></li>
+<li class="toctree-l2"><a class="reference internal" href="9-2-LoiNewton2.html">9.3. La 2<sup>ème</sup> loi de Newton</a></li>
+
+<li class="toctree-l2"><a class="reference internal" href="9-2-questions.html">9.5. Questions conceptuelles</a></li>
+<li class="toctree-l2"><a class="reference internal" href="9-3-LoiNewton3.html">9.6. La 3<sup>ème</sup> loi de Newton</a></li>
+<li class="toctree-l2"><a class="reference internal" href="9-3-questions.html">9.7. Questions conceptuelles</a></li>
+<li class="toctree-l2"><a class="reference internal" href="9-4-AutreForces.html">9.8. Les autres forces</a></li>
+<li class="toctree-l2"><a class="reference internal" href="9-4-questions.html">9.9. Questions conceptuelles</a></li>
+<li class="toctree-l2"><a class="reference internal" href="9-resume.html">9.10. Résumé</a></li>
+</ul>
+</li>
+</ul>
+<ul class="nav bd-sidenav">
+<li class="toctree-l1 has-children"><a class="reference internal" href="../Chapitre10/lecon10.html">10. Stratégie et Applications des Forces</a><input class="toctree-checkbox" id="toctree-checkbox-11" name="toctree-checkbox-11" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-11"><i class="fa-solid fa-chevron-down"></i></label><ul>
+<li class="toctree-l2"><a class="reference internal" href="../Chapitre10/10-1-StrategieRes.html">10.1. Stratégie de résolution</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../Chapitre10/10-2-Applications.html">10.2. Applications des lois de Newton</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../Chapitre10/10-resume.html">10.3. Résumé</a></li>
+</ul>
+</li>
+</ul>
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">Annexes</span></p>
+<ul class="nav bd-sidenav">
+<li class="toctree-l1 has-children"><a class="reference internal" href="../Annexes/annexe.html">11. Annexes</a><input class="toctree-checkbox" id="toctree-checkbox-12" name="toctree-checkbox-12" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-12"><i class="fa-solid fa-chevron-down"></i></label><ul>
+<li class="toctree-l2"><a class="reference internal" href="../Annexes/MyST_Cheat.html">11.1. MyST Cheat sheet</a></li>
+</ul>
+</li>
+</ul>
+
+    </div>
+</nav></div>
+    </div>
+  
+  
+  <div class="sidebar-primary-items__end sidebar-primary__section">
+  </div>
+  
+  <div id="rtd-footer-container"></div>
+
+
+      </div>
+      
+      <main id="main-content" class="bd-main">
+        
+        
+
+<div class="sbt-scroll-pixel-helper"></div>
+
+          <div class="bd-content">
+            <div class="bd-article-container">
+              
+              <div class="bd-header-article">
+<div class="header-article-items header-article__inner">
+  
+    <div class="header-article-items__start">
+      
+        <div class="header-article-item"><label class="sidebar-toggle primary-toggle btn btn-sm" for="__primary" title="Toggle primary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
+  <span class="fa-solid fa-bars"></span>
+</label></div>
+      
+    </div>
+  
+  
+    <div class="header-article-items__end">
+      
+        <div class="header-article-item">
+
+<div class="article-header-buttons">
+
+
+
+
+
+<div class="dropdown dropdown-source-buttons">
+  <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false" aria-label="Source repositories">
+    <i class="fab fa-github"></i>
+  </button>
+  <ul class="dropdown-menu">
+      
+      
+      
+      <li><a href="https://github.com/executablebooks/jupyter-book" target="_blank"
+   class="btn btn-sm btn-source-repository-button dropdown-item"
+   title="Source repository"
+   data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fab fa-github"></i>
+  </span>
+<span class="btn__text-container">Repository</span>
+</a>
+</li>
+      
+      
+      
+      
+      <li><a href="https://github.com/executablebooks/jupyter-book/issues/new?title=Issue%20on%20page%20%2FChapitre9/9-1-LoiNewton1.html&body=Your%20issue%20content%20here." target="_blank"
+   class="btn btn-sm btn-source-issues-button dropdown-item"
+   title="Open an issue"
+   data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-lightbulb"></i>
+  </span>
+<span class="btn__text-container">Open issue</span>
+</a>
+</li>
+      
+  </ul>
+</div>
+
+
+
+
+
+
+<div class="dropdown dropdown-download-buttons">
+  <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false" aria-label="Download this page">
+    <i class="fas fa-download"></i>
+  </button>
+  <ul class="dropdown-menu">
+      
+      
+      
+      <li><a href="../_sources/Chapitre9/9-1-LoiNewton1.md" target="_blank"
+   class="btn btn-sm btn-download-source-button dropdown-item"
+   title="Download source file"
+   data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-file"></i>
+  </span>
+<span class="btn__text-container">.md</span>
+</a>
+</li>
+      
+      
+      
+      
+      <li>
+<button onclick="window.print()"
+  class="btn btn-sm btn-download-pdf-button dropdown-item"
+  title="Print to PDF"
+  data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-file-pdf"></i>
+  </span>
+<span class="btn__text-container">.pdf</span>
+</button>
+</li>
+      
+  </ul>
+</div>
+
+
+
+
+<button onclick="toggleFullScreen()"
+  class="btn btn-sm btn-fullscreen-button"
+  title="Fullscreen mode"
+  data-bs-placement="bottom" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-expand"></i>
+  </span>
+
+</button>
+
+
+
+<script>
+document.write(`
+  <button class="btn btn-sm navbar-btn theme-switch-button" title="light/dark" aria-label="light/dark" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <span class="theme-switch nav-link" data-mode="light"><i class="fa-solid fa-sun fa-lg"></i></span>
+    <span class="theme-switch nav-link" data-mode="dark"><i class="fa-solid fa-moon fa-lg"></i></span>
+    <span class="theme-switch nav-link" data-mode="auto"><i class="fa-solid fa-circle-half-stroke fa-lg"></i></span>
+  </button>
+`);
+</script>
+
+
+<script>
+document.write(`
+  <button class="btn btn-sm navbar-btn search-button search-button__button" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <i class="fa-solid fa-magnifying-glass fa-lg"></i>
+  </button>
+`);
+</script>
+<label class="sidebar-toggle secondary-toggle btn btn-sm" for="__secondary"title="Toggle secondary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <span class="fa-solid fa-list"></span>
+</label>
+</div></div>
+      
+    </div>
+  
+</div>
+</div>
+              
+              
+
+<div id="jb-print-docs-body" class="onlyprint">
+    <h1>La 1ère loi de Newton</h1>
+    <!-- Table of contents -->
+    <div id="print-main-content">
+        <div id="jb-print-toc">
+            
+            <div>
+                <h2> Contents </h2>
+            </div>
+            <nav aria-label="Page">
+                <ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#introduction-a-la-dynamique">Introduction à la dynamique</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#developpement-du-concept-de-force">Développement du concept de force</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#premiere-loi-du-mouvement-de-newton-l-inertie">Première loi du mouvement de Newton: l’inertie</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#masse">Masse</a></li>
+</ul>
+</li>
+</ul>
+            </nav>
+        </div>
+    </div>
+</div>
+
+              
+                
+<div id="searchbox"></div>
+                <article class="bd-article">
+                  
+  <section class="tex2jax_ignore mathjax_ignore" id="la-1ere-loi-de-newton">
+<span id="chap-loinewton1"></span><h1><span class="section-number">9.1. </span>La 1<sup>ère</sup> loi de Newton<a class="headerlink" href="#la-1ere-loi-de-newton" title="Permalink to this heading">#</a></h1>
+<section id="introduction-a-la-dynamique">
+<h2>Introduction à la dynamique<a class="headerlink" href="#introduction-a-la-dynamique" title="Permalink to this heading">#</a></h2>
+<p>Le mouvement attire notre attention. Le mouvement lui-même peut être beau, ce qui nous amène à nous émerveiller devant les forces nécessaires pour obtenir un mouvement spectaculaire, comme celui d’un dauphin sautant hors de l’eau, ou d’un sauteur à la perche, ou le vol d’un oiseau ou l’orbite d’un satellite. L’étude du mouvement est la cinématique, mais la cinématique ne décrit que la façon dont les objets se déplacent - leur vitesse et leur accélération. <code class="docutils literal notranslate"><span class="pre">La</span> <span class="pre">dynamique</span></code> prend en compte les forces qui affectent le mouvement des objets et des systèmes en mouvement. Les lois du mouvement de Newton sont le fondement de la dynamique. Ces lois fournissent un exemple de l’ampleur et de la simplicité des principes sous lesquels la nature fonctionne. Ce sont également des lois universelles en ce sens qu’elles s’appliquent à des situations similaires sur Terre et dans l’espace.</p>
+<p>Les lois du mouvement d’Isaac Newton (1642-1727) n’étaient qu’une partie de l’œuvre monumentale qui l’a rendu légendaire. Le développement des lois de Newton marque la transition de la Renaissance à l’ère moderne. Cette transition a été caractérisée par un changement révolutionnaire dans la façon dont les gens pensaient à l’univers physique. Pendant de nombreux siècles, les philosophes naturels avaient débattu de la nature de l’univers en se fondant en grande partie sur certaines règles de la logique avec un grand poids donné aux pensées des philosophes classiques antérieurs tels qu’Aristote (384-322 avant J.-C.). Parmi les nombreux grands penseurs qui ont contribué à ce changement figuraient Newton et Galilée.</p>
+<figure class="align-center" id="newtonlivre">
+<a class="reference internal image-reference" href="../_images/NewtonLivre.jpg"><img alt="../_images/NewtonLivre.jpg" src="../_images/NewtonLivre.jpg" style="width: 40%;" /></a>
+<figcaption>
+<p><span class="caption-number">Fig. 9.1 </span><span class="caption-text"><em>L’œuvre monumentale d’Isaac Newton, Philosophiae Naturalis Principia Mathematica, a été publiée en 1687. Elle proposait des lois scientifiques qui sont encore utilisées aujourd’hui pour décrire le mouvement des objets. (crédit : Service commun de la documentation de l’Université de Strasbourg)</em></span><a class="headerlink" href="#newtonlivre" title="Permalink to this image">#</a></p>
+</figcaption>
+</figure>
+<p>Galilée a joué un rôle déterminant dans l’établissement de l’observation comme le déterminant absolu de la vérité, plutôt que comme un argument <em>logique</em>. L’utilisation du télescope par Galilée a été sa réalisation la plus remarquable pour démontrer l’importance de l’observation. Il a découvert des lunes en orbite autour de Jupiter et a fait d’autres observations qui étaient incompatibles avec certaines idées anciennes et dogmes religieux. Pour cette raison, et à cause de la manière dont il traitait les autorités, Galilée fut jugé par l’Inquisition et puni. Il a passé les dernières années de sa vie sous une forme d’assignation à résidence. Parce que d’autres avant Galilée avaient également fait des découvertes en observant la nature de l’univers, et parce que des observations répétées confirmaient celles de Galilée, son œuvre ne pouvait être ni supprimée ni niée. Après sa mort, son travail a été vérifié par d’autres, et ses idées ont finalement été acceptées par l’église et les communautés scientifiques.</p>
+<p>Galilée a également contribué à la formation de ce que l’on appelle maintenant la première loi du mouvement de Newton. Newton a utilisé les travaux de ses prédécesseurs, qui lui ont permis de développer des lois du mouvement, de découvrir la loi de la gravité, d’inventer le calcul et d’apporter de grandes contributions aux théories de la lumière et de la couleur. Il est étonnant que bon nombre de ces développements aient été réalisés avec Newton travaillant seul, sans le bénéfice des interactions habituelles qui ont lieu entre les scientifiques aujourd’hui.</p>
+<p>Ce n’est qu’à l’avènement de la physique moderne au début du 20<sup>e</sup> siècle qu’il a été découvert que les lois du mouvement de Newton ne produisent une bonne approximation du mouvement que lorsque les objets se déplacent à des vitesses beaucoup, bien inférieures à la vitesse de la lumière et lorsque ces objets sont plus grandes que la taille de la plupart des molécules (environ <span class="math notranslate nohighlight">\(10^{-9}\,m\)</span> diamètre). Ces contraintes définissent le domaine de la mécanique classique, comme discuté dans Introduction à la nature de la science et de la physique . Au début du 20<sup>e</sup> siècle, Albert Einstein (1879-1955) a développé la théorie de la relativité et, avec de nombreux autres scientifiques, a développé la théorie quantique. Cette théorie n’a pas les contraintes présentes dans la physique classique. Toutes les situations que nous considérons dans ce chapitre, et toutes celles qui ont précédé l’introduction de la relativité dans la relativité restreinte , sont du domaine de la physique classique.</p>
+</section>
+<section id="developpement-du-concept-de-force">
+<h2>Développement du concept de force<a class="headerlink" href="#developpement-du-concept-de-force" title="Permalink to this heading">#</a></h2>
+<p><strong>La dynamique</strong> est l’étude des forces qui font bouger les objets et les systèmes. Pour comprendre cela, nous avons besoin d’une définition pratique de la <code class="docutils literal notranslate"><span class="pre">force</span></code>. Notre définition intuitive de la force - <em>c’est-à-dire une poussée ou une traction</em> - est un bon point de départ. Nous savons qu’une poussée ou une traction a à la fois une ampleur et une direction (c’est donc une quantité vectorielle) et peut varier considérablement à chaque égard. Par exemple, un canon exerce une forte force sur un boulet de canon lancé en l’air. En revanche, la Terre n’exerce qu’une infime traction vers le bas sur une puce. Nos expériences quotidiennes nous donnent également une bonne idée de l’ajout de forces multiples. Si deux personnes poussent dans des directions différentes sur une troisième personne, comme illustré à la <a class="reference internal" href="#patineurs"><span class="std std-numref">Fig. 9.2</span></a>, on peut s’attendre à ce que la force totale soit dans la direction indiquée. Puisque la force est un vecteur, elle s’ajoute comme les autres vecteurs, comme l’illustre la <a class="reference internal" href="#patineurs"><span class="std std-numref">Fig. 9.2</span></a>(a) pour deux patineurs sur glace. Les forces, comme les autres vecteurs, sont représentées par des flèches et peuvent être ajoutées en utilisant la méthode familière de tête-à-queue ou par des méthodes trigonométriques. Ces idées ont été développées en cinématique bidimensionnelle.</p>
+<figure class="align-center" id="patineurs">
+<a class="reference internal image-reference" href="../_images/Patineurs.jpg"><img alt="../_images/Patineurs.jpg" src="../_images/Patineurs.jpg" style="width: 50%;" /></a>
+<figcaption>
+<p><span class="caption-number">Fig. 9.2 </span><span class="caption-text"><em>La partie (a) montre une vue de dessus de deux patineurs sur glace poussant sur un troisième. Les forces sont des vecteurs et s’ajoutent comme les autres vecteurs, donc la force totale sur le troisième patineur est dans la direction indiquée. Dans la partie (b), nous voyons un diagramme du corps libre représentant les forces agissant sur le troisième patineur. (crédit : <a class="reference external" href="http://openstax.org">openstax.org</a>)</em></span><a class="headerlink" href="#patineurs" title="Permalink to this image">#</a></p>
+</figcaption>
+</figure>
+<p>La <a class="reference internal" href="#patineurs"><span class="std std-numref">Fig. 9.2</span></a>(b) est notre premier exemple de <strong>diagramme des forces</strong>, qui permet d’illustrer toutes les <strong>forces externes</strong> agissant sur un corps. Le corps est représenté par un seul point isolé (ou point matériel), et seules les forces agissant sur le corps de l’extérieur (forces externes) sont représentées. (Ces forces sont les seules indiquées, car seules les forces externes agissant sur le corps affectent son mouvement. Nous pouvons ignorer toutes les forces internes à l’intérieur du corps.) Ces diagrammes des forces sont très utiles pour analyser les forces agissant sur un système et sont largement utilisés dans l’étude et l’application des lois du mouvement de Newton.</p>
+<p>Une définition plus quantitative de la force peut être basée sur une force standard, tout comme la distance est mesurée en unités par rapport à une distance standard. Une possibilité est d’étirer un ressort sur une certaine distance fixe, comme illustré sur la <a class="reference internal" href="#ressort"><span class="std std-numref">Fig. 9.3</span></a>, et d’utiliser la force qu’il exerce pour se ramener à sa forme relâchée - <em>appelée force de rappel</em> - comme norme. L’amplitude de toutes les autres forces peut être exprimée en multiples de cette unité de force standard. De nombreuses autres possibilités existent pour les forces standard. (L’une que nous rencontrerons dans le magnétisme est la force magnétique entre deux fils transportant du courant électrique.) Certaines définitions alternatives de la force seront données plus loin dans ce chapitre.</p>
+<figure class="align-center" id="ressort">
+<a class="reference internal image-reference" href="../_images/ressort.jpg"><img alt="../_images/ressort.jpg" src="../_images/ressort.jpg" style="width: 50%;" /></a>
+<figcaption>
+<p><span class="caption-number">Fig. 9.3 </span><span class="caption-text"><em>La force exercée par un ressort étiré peut être utilisée comme unité de force standard. (a) Ce ressort a une longueur <span class="math notranslate nohighlight">\(x\)</span> lorsqu’il n’est pas déformé. (b) Lorsqu’il est étiré sur une distance <span class="math notranslate nohighlight">\(\Delta x\)</span>, le ressort exerce une force de rappel, <span class="math notranslate nohighlight">\(F_{ressort}\)</span>, qui est reproductible. (c) Une balance à ressort est un appareil qui utilise un ressort pour mesurer la force. La force <span class="math notranslate nohighlight">\(F_{ressort}\)</span> s’exerce sur tout ce qui est attaché au crochet. Ici <span class="math notranslate nohighlight">\(F_{ressort}\)</span> a une amplitude de <span class="math notranslate nohighlight">\(6\)</span> unités dans l’unité de force employée. (crédit : <a class="reference external" href="http://openstax.org">openstax.org</a>)</em></span><a class="headerlink" href="#ressort" title="Permalink to this image">#</a></p>
+</figcaption>
+</figure>
+</section>
+<section id="premiere-loi-du-mouvement-de-newton-l-inertie">
+<h2>Première loi du mouvement de Newton: l’inertie<a class="headerlink" href="#premiere-loi-du-mouvement-de-newton-l-inertie" title="Permalink to this heading">#</a></h2>
+<p>L’expérience suggère qu’un objet au repos restera au repos s’il est laissé seul, et qu’un objet en mouvement a tendance à ralentir et à s’arrêter à moins qu’un effort ne soit fait pour le maintenir en mouvement. Ce que dit la première loi du mouvement de Newton, cependant, est le suivant :</p>
+<div class="formule admonition">
+<p class="admonition-title">Première loi de Newton</p>
+<p>Un corps au repos reste au repos ou, s’il est en mouvement, reste en mouvement à une vitesse constante à moins qu’il ne subisse une force extérieure résultante.</p>
+<div class="math notranslate nohighlight">
+\[\vec{v}=\,\text{constante}\,\,\Leftrightarrow\,\Sigma\vec{F}=0\]</div>
+</div>
+<p>Notez l’utilisation répétée du verbe <em>reste</em>. Nous pouvons penser que cette loi préserve le statu quo du mouvement.</p>
+<p>Plutôt que de contredire notre expérience, <code class="docutils literal notranslate"><span class="pre">la</span> <span class="pre">première</span> <span class="pre">loi</span> <span class="pre">du</span> <span class="pre">mouvement</span> <span class="pre">de</span> <span class="pre">Newton</span></code> stipule qu’il doit y avoir une cause (qui est une force externe résultante) pour qu’il y ait un changement de vitesse (soit un changement de grandeur ou de direction). Nous définirons la force externe résultante dans la section suivante. Un objet glissant sur une table ou un sol ralentit en raison de la force de friction agissant sur l’objet. Si la friction disparaissait, l’objet ralentirait-il encore ?</p>
+<p>L’idée de cause à effet est cruciale pour décrire avec précision ce qui se passe dans diverses situations. Par exemple, considérez ce qui arrive à un objet glissant le long d’une surface horizontale rugueuse. L’objet s’arrête rapidement. Si nous pulvérisons la surface avec de la poudre de talc pour rendre la surface plus lisse, l’objet glisse plus loin. Si nous rendons la surface encore plus lisse en frottant de l’huile lubrifiante dessus, l’objet glisse encore plus loin. En extrapolant à une surface sans frottement, on peut imaginer l’objet glissant en ligne droite indéfiniment. La friction est donc la cause du ralentissement (conforme à la première loi de Newton). L’objet ne ralentirait pas du tout si le frottement était complètement éliminé. Considérez une table de hockey sur air. Lorsque l’air est coupé, la rondelle ne glisse que sur une courte distance avant que la friction ne la ralentisse jusqu’à l’arrêt. Cependant, lorsque l’air est activé, cela crée une surface presque sans friction, et la rondelle glisse sur de longues distances sans ralentir. De plus, si nous en savons suffisamment sur le frottement, nous pouvons prédire avec précision à quelle vitesse l’objet ralentira. La friction est une force externe.</p>
+<p>La première loi de Newton est tout à fait générale et peut être appliquée à tout, d’un objet glissant sur une table à un satellite en orbite en passant par le sang pompé du cœur. Des expériences ont parfaitement vérifié que tout changement de vitesse (vitesse ou direction) doit être causé par une force externe. L’idée de lois universelles ou d’application générale est important non seulement ici - c’est une caractéristique fondamentale de toutes les lois de la physique. Identifier ces lois revient à reconnaître des modèles dans la nature à partir desquels d’autres modèles peuvent être découverts. Le génie de Galilée, qui a d’abord développé l’idée de la première loi, et de Newton, qui l’a clarifiée, a été de se poser la question fondamentale: “Quelle est la cause ?” Penser en termes de cause à effet est une vision du monde fondamentalement différente de l’approche typique de la Grèce antique lorsque des questions telles que “Pourquoi un tigre a-t-il des rayures?” aurait été répondu à la manière aristotélicienne: “C’est la nature de la bête.” C’est peut-être vrai, mais ce n’est pas une idée utile.</p>
+<section id="masse">
+<h3>Masse<a class="headerlink" href="#masse" title="Permalink to this heading">#</a></h3>
+<p>La propriété d’un corps de rester au repos ou de rester en mouvement à vitesse constante s’appelle <code class="docutils literal notranslate"><span class="pre">l'inertie</span></code>. La première loi de Newton est souvent appelée <strong>la loi d’inertie</strong>. Comme nous le savons par expérience, certains objets ont plus d’inertie que d’autres. Il est évidemment plus difficile de changer le mouvement d’un gros rocher que celui d’un ballon de basket, par exemple. L’inertie d’un objet se mesure par sa masse. En gros, la masse est une mesure de la quantité de “”substance” (ou de matière) dans quelque chose. La quantité ou la quantité de matière dans un objet est déterminée par le nombre d’atomes et de molécules de divers types qu’il contient. Contrairement au poids, la masse ne varie pas selon l’emplacement. La masse d’un objet est la même sur Terre, en orbite ou à la surface de la Lune. En pratique, il est très difficile de compter et d’identifier tous les atomes et molécules d’un objet, de sorte que les masses ne sont pas souvent déterminées de cette manière. Sur le plan opérationnel, les masses d’objets sont déterminées par comparaison avec le kilogramme standard.</p>
+</section>
+</section>
+</section>
+
+    <script type="text/x-thebe-config">
+    {
+        requestKernel: true,
+        binderOptions: {
+            repo: "binder-examples/jupyter-stacks-datascience",
+            ref: "master",
+        },
+        codeMirrorConfig: {
+            theme: "abcdef",
+            mode: "python"
+        },
+        kernelOptions: {
+            name: "python3",
+            path: "./Chapitre9"
+        },
+        predefinedOutput: true
+    }
+    </script>
+    <script>kernelName = 'python3'</script>
+
+                </article>
+              
+
+              
+              
+              
+              
+                <footer class="prev-next-footer">
+                  
+<div class="prev-next-area">
+    <a class="left-prev"
+       href="lecon9.html"
+       title="previous page">
+      <i class="fa-solid fa-angle-left"></i>
+      <div class="prev-next-info">
+        <p class="prev-next-subtitle">previous</p>
+        <p class="prev-next-title"><span class="section-number">9. </span>Les 3 Lois de Newton</p>
+      </div>
+    </a>
+    <a class="right-next"
+       href="9-1-questions.html"
+       title="next page">
+      <div class="prev-next-info">
+        <p class="prev-next-subtitle">next</p>
+        <p class="prev-next-title"><span class="section-number">9.2. </span>Questions conceptuelles</p>
+      </div>
+      <i class="fa-solid fa-angle-right"></i>
+    </a>
+</div>
+                </footer>
+              
+            </div>
+            
+            
+              
+                <div class="bd-sidebar-secondary bd-toc"><div class="sidebar-secondary-items sidebar-secondary__inner">
+
+
+  <div class="sidebar-secondary-item">
+  <div class="page-toc tocsection onthispage">
+    <i class="fa-solid fa-list"></i> Contents
+  </div>
+  <nav class="bd-toc-nav page-toc">
+    <ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#introduction-a-la-dynamique">Introduction à la dynamique</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#developpement-du-concept-de-force">Développement du concept de force</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#premiere-loi-du-mouvement-de-newton-l-inertie">Première loi du mouvement de Newton: l’inertie</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#masse">Masse</a></li>
+</ul>
+</li>
+</ul>
+  </nav></div>
+
+</div></div>
+              
+            
+          </div>
+          <footer class="bd-footer-content">
+            
+<div class="bd-footer-content__inner container">
+  
+  <div class="footer-item">
+    
+<p class="component-author">
+By Philippe Pittet
+</p>
+
+  </div>
+  
+  <div class="footer-item">
+    
+
+  <p class="copyright">
+    
+      © Copyright 2022.
+      <br/>
+    
+  </p>
+
+  </div>
+  
+  <div class="footer-item">
+    
+  </div>
+  
+  <div class="footer-item">
+    
+  </div>
+  
+</div>
+          </footer>
+        
+
+      </main>
+    </div>
+  </div>
+  
+  <!-- Scripts loaded after <body> so the DOM is not blocked -->
+  <script src="../_static/scripts/bootstrap.js?digest=8d27b9dea8ad943066ae"></script>
+<script src="../_static/scripts/pydata-sphinx-theme.js?digest=8d27b9dea8ad943066ae"></script>
+
+  <footer class="bd-footer">
+  </footer>
+  </body>
+</html>
