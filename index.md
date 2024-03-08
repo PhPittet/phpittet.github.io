@@ -5,4 +5,3 @@
 2. [Physique 1M & 2M](https://phpittet.github.io/physique-gybe/)
 3. [Physique 2CSA & 3CSA](https://phpittet.github.io/physique-CSA-gybe/index.html)
 
-=======
