@@ -1,6 +1,5 @@
 ## Welcome to my GitHub Pages
 
-<<<<<<< HEAD
 ### Cours de Physique du Gymnase de Beaulieu
 1. Physique 1C (TO DO)
 2. [Physique 1M & 2M](https://phpittet.github.io/physique-gybe/)
